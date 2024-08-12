@@ -1,7 +1,6 @@
-streamlit==1.37.1
-numpy>=1.26.0
-pandas==2.2.2
-
-matplotlib==3.7.1
-plotly==5.3.1
-scikit-learn==0.24.2  # Consider upgrading if possible
+streamlit
+numpy
+pandas
+matplotlib
+plotly
+scikit-learn  # Consider upgrading if possible
