@@ -141,7 +141,7 @@ elif nav == "Prediction":
     if st.button("Predict Crop"):
         with st.spinner('Fetching prediction...'):
             # Step 2: Load the model (adjust the path as necessary)
-            with open("E:\stramlit\model.pkl", "rb") as f:
+            with open("model.pkl", "rb") as f:
                 model = pickle.load(f) 
             # Step 3: Make prediction
             # Ensure the input data matches the model's expected format
