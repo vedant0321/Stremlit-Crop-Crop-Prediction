@@ -1,6 +1,6 @@
 streamlit==1.37.1
 pandas==2.2.2
-numpy==2.0.1
+numpy==1.21.6  # Compatible version with scikit-learn
 matplotlib==3.7.1
 plotly==5.3.1
-scikit-learn==0.24.2
+scikit-learn==0.24.2  # Consider upgrading if possible
