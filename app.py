@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from plotly import graph_objs as go
-from streamlit_navigation_bar import st_navbar
 import pickle
 
 st.set_page_config(initial_sidebar_state="collapsed")
