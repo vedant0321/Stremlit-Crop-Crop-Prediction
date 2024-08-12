@@ -14,30 +14,30 @@ data = pd.read_csv("E://stramlit//Crop_recommendation.csv")
 
 # Sidebar navigation
 
-nav = ["Home", "Graphs", "Prediction", "Contact"]
-styles = {
-    "nav": {
-        "background-color": "rgb(123, 209, 146)",
-    },
-    "div": {
-        "max-width": "32rem",
-    },
-    "span": {
-        "border-radius": "0.5rem",
-        "color": "rgb(49, 51, 63)",
-        "margin": "0 0.125rem",
-        "padding": "0.4375rem 0.625rem",
-    },
-    "active": {
-        "background-color": "rgba(255, 255, 255, 0.25)",
-    },
-    "hover": {
-        "background-color": "rgba(255, 255, 255, 0.35)",
-    },
-}
-nav = st_navbar(nav, styles=styles)
+# nav = ["Home", "Graphs", "Prediction", "Contact"]
+# styles = {
+#     "nav": {
+#         "background-color": "rgb(123, 209, 146)",
+#     },
+#     "div": {
+#         "max-width": "32rem",
+#     },
+#     "span": {
+#         "border-radius": "0.5rem",
+#         "color": "rgb(49, 51, 63)",
+#         "margin": "0 0.125rem",
+#         "padding": "0.4375rem 0.625rem",
+#     },
+#     "active": {
+#         "background-color": "rgba(255, 255, 255, 0.25)",
+#     },
+#     "hover": {
+#         "background-color": "rgba(255, 255, 255, 0.35)",
+#     },
+# # }
+# nav = st_navbar(nav, styles=styles)
 # nav=st_navbar( ["Home","Graphs", "Prediction", "Contact"])
-# nav = st.sidebar.radio("Navigation", ["Home", "Prediction", "Contact"])
+nav = st.sidebar.radio("Navigation", ["Home", "Prediction", "Contact"])
 
 # App title
 st.title("Crop Prediction")
