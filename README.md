@@ -52,3 +52,5 @@ Name: Vedant Birewar
 Email: vedantbirewar@gmail.com
 LinkedIn: Vedant Birewar
 GitHub: vedant0321
+'''
+[link to deployment](https://crop-ai.streamlit.app/)'''
