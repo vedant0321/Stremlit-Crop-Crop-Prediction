@@ -7,7 +7,7 @@ import pickle
 
 st.set_page_config(initial_sidebar_state="collapsed")
 # Load data
-data = pd.read_csv("E://stramlit//Crop_recommendation.csv")
+data = pd.read_csv("Crop_recommendation.csv")
 
 
 
@@ -43,7 +43,7 @@ st.title("Crop Prediction")
 
 if nav == "Home":
     # Display image
-    st.image("E://stramlit//Crop Prediction.jpg", use_column_width=True)
+    st.image("Crop Prediction.jpg", use_column_width=True)
     st.markdown(""" # <span style="color:#96ffb2"> Crop Prediction Using Machine Learning </span>
     
 Welcome to our Crop Prediction app, powered by advanced machine learning algorithms!
