@@ -70,7 +70,7 @@ Our crop prediction model leverages an ensemble approach based on critical agric
 The dataset comprises 2202 entities, each characterized by attributes related to soil and environmental conditions, specifically NPK levels (Nitrogen, Phosphorus, Potassium), pH, humidity, and rainfall.
 The target variable is the type of crop among 21 possible crops.
 
-### <span style="color:#96ffb2">Moedl Selection</span>
+### <span style="color:#96ffb2">Model Selection</span>
 An **ensemble**  model is chosen to leverage the strengths of multiple learning algorithms.
 The ensemble model combines the predictions of the following base models:
 - ** Random Forest Classifier:** An ensemble of decision trees, which reduces overfitting and improves accuracy.

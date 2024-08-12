@@ -2,6 +2,9 @@
 
 Welcome to our Crop Prediction app, powered by advanced machine learning algorithms! Our platform leverages cutting-edge technology to help farmers and agricultural stakeholders make informed decisions about their crops, ensuring better yield and efficient resource management.
 
+###Link of project:
+[link to deployment](https://crop-ai.streamlit.app/)
+
 ## Features
 
 - **Accurate Yield Predictions:** Our machine learning models analyze a vast array of data, including historical weather patterns, soil conditions, and crop performance, to provide accurate yield predictions.
@@ -53,4 +56,3 @@ Email: vedantbirewar@gmail.com
 LinkedIn: Vedant Birewar
 GitHub: vedant0321
 '''
-[link to deployment](https://crop-ai.streamlit.app/)'''
