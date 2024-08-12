@@ -139,23 +139,26 @@ elif nav == "Prediction":
     
     # Button to make prediction
     if st.button("Predict Crop"):
-        # Step 2: Load the model (adjust the path as necessary)
-        with open("E:\stramlit\model.pkl", "rb") as f:
-            model = pickle.load(f) 
-        # Step 3: Make prediction
-        # Ensure the input data matches the model's expected format
-        input_data = np.array([[N,P,K,temperature,humidity,pH,rainfall]])
-        prediction = model.predict(input_data)
-        # Step 4: Display prediction
-        # Assuming prediction[0] is a numerical ID, and we have a dictionary that maps these IDs to crop names
-        crop_names = {1: "Rice", 2: "maize", 3: "chikpea",4: "kidneybeans",5: "pigeonpeas",
-        6: "mothbeans",7: "mungbeans",8: "blackgrams",9: " lentil",10: "pomogranate",11: "banana" 
-        ,12 :"mango",13: "grapes ",14:"watermelon",15:"muskmeelon",16:"apple",17:"orange",18:"papaya",
-        19:"coconut",20:"jute",21:"coffee"}  # Add all necessary mappings
-        # Get the crop name using the prediction
-        predicted_crop_name = crop_names.get(prediction[0], "Unknown crop")
-        # Display the crop name
-        st.write(f"The recommended crop is: {predicted_crop_name}")
+        with st.spinner('Fetching prediction...'):
+            # Step 2: Load the model (adjust the path as necessary)
+            with open("E:\stramlit\model.pkl", "rb") as f:
+                model = pickle.load(f) 
+            # Step 3: Make prediction
+            # Ensure the input data matches the model's expected format
+            input_data = np.array([[N, P, K, temperature, humidity, pH, rainfall]])
+            prediction = model.predict(input_data)
+            # Step 4: Display prediction
+            # Assuming prediction[0] is a numerical ID, and we have a dictionary that maps these IDs to crop names
+            crop_names = {
+                1: "Rice", 2: "maize", 3: "chikpea", 4: "kidneybeans", 5: "pigeonpeas",
+                6: "mothbeans", 7: "mungbeans", 8: "blackgrams", 9: "lentil", 10: "pomogranate",
+                11: "banana", 12: "mango", 13: "grapes", 14: "watermelon", 15: "muskmeelon",
+                16: "apple", 17: "orange", 18: "papaya", 19: "coconut", 20: "cotton", 21: "jute", 22: "coffee"
+            }  # Add all necessary mappings
+            # Get the crop name using the prediction
+            predicted_crop_name = crop_names.get(prediction[0], "Unknown crop or error in calculation")
+            # Display the crop name
+            st.write(f"The recommended crop is: {predicted_crop_name}")
 
 elif nav == "Contact":
     # Contact page content
