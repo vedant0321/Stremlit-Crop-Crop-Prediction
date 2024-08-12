@@ -2,7 +2,7 @@
 
 Welcome to our Crop Prediction app, powered by advanced machine learning algorithms! Our platform leverages cutting-edge technology to help farmers and agricultural stakeholders make informed decisions about their crops, ensuring better yield and efficient resource management.
 
-###Link of project:
+### Link of project:
 [link to deployment](https://crop-ai.streamlit.app/)
 
 ## Features
